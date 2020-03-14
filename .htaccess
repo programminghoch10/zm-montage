@@ -1,0 +1,3 @@
+<Files zmconfig.php>
+	deny from all
+</Files>
