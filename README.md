@@ -9,8 +9,11 @@ Edit `zmconfig.php` and put in all the needed Information.
 
 ## How to use
 
+Call the file `zmmontage.php` from your client.
 
-You can append your parameters in HTTP GET from.
+Parameters can either be provided by appending them in `HTTP GET` form, 
+or by including them in an `HTTP POST` request.  
+When both are provided, `HTTP GET` is preferred. 
 
 Parameter | Description | Default
 --------- | ----------- | -------
@@ -22,7 +25,7 @@ Parameter | Description | Default
 `noerror` | Remove stream instead of replacing it with `alturl` | 1
 
 
-`alturl`: This Parameter is configured within the `wall.php` file. 
+`alturl`: This Parameter is configured within the `zmmontage.php` file. 
 It describes which web url should be shown when no stream is available.
 This defaults to the provided `unavailable.png` image.
 

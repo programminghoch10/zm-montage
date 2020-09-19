@@ -1,11 +1,12 @@
 <?php
 require_once("zmconfig.php");
-$ids = $_REQUEST[ids] ?? "";
-$refresh = $_REQUEST[refresh] ?? 120;
-$imgtimeout = $_REQUEST[imgtimeout] ?? 2.5;
-$quality = $_REQUEST[quality] ?? 50; //quality in percent
-$fps = $_REQUEST[fps] ?? 5;
-$noerror = $_REQUEST[noerror] ?? 1; //will remove stream instead of showing alturl, will still show alturl if there is no stream available
+$PARAMS = array_replace($_POST, $_REQUEST);
+$ids = $PARAMS[ids] ?? "";
+$refresh = $PARAMS[refresh] ?? 120;
+$imgtimeout = $PARAMS[imgtimeout] ?? 2.5;
+$quality = $PARAMS[quality] ?? 50; //quality in percent
+$fps = $PARAMS[fps] ?? 5;
+$noerror = $PARAMS[noerror] ?? 1; //will remove stream instead of showing alturl, will still show alturl if there is no stream available
 $alturl = "unavailable.png"; //alternative picture, will be shown if stream is not available
 
 if ($id == "") die("Invalid Camera ID");
