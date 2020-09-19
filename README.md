@@ -9,7 +9,6 @@ Edit `zmconfig.php` and put in all the needed Information.
 
 ## How to use
 
-Call the file `wall.php` or `single.php` from your client.
 
 You can append your parameters in HTTP GET from.
 
@@ -27,11 +26,7 @@ Parameter | Description | Default
 It describes which web url should be shown when no stream is available.
 This defaults to the provided `unavailable.png` image.
 
-Difference between `wall.php` and `single.php`: 
-In `single.php` the parameter `ids` is called `id`, 
-because (as the name says) it only displays one stream.
-
-`single.php` might soon be removed, as you can also call `wall.php` with only one id provided.
+If you only want to display one stream, set `ids` only to the number of the stream.
 
 ## Security
 
