@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	foreach ($idarray as $id) {
 		if ($id == "") continue;
 	?>
-	loadimage(<?php echo($id);?>, <?php echo $server; ?> + "/cgi-bin/nph-zms?scale=" + <?php echo $quality; ?> + "&mode=jpeg&maxfps=" + <?php echo $fps; ?> + "&monitor=" + <?php echo $id; ?> + "&user=" + <?php echo $zmuser; ?> + "&pass=" + <?php echo $zmpass; ?>);
+	loadimage(<?php echo($id);?>, <?php echo "\"".$server."\""; ?> + "/cgi-bin/nph-zms?scale=" + <?php echo $quality; ?> + "&mode=jpeg&maxfps=" + <?php echo $fps; ?> + "&monitor=" + <?php echo $id; ?> + "&user=" + <?php echo "\"".$zmuser."\""; ?> + "&pass=" + <?php echo "\"".$zmpass."\""; ?>);
 	<?php
 	}
 	?>
