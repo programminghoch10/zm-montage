@@ -9,7 +9,7 @@ $fps = $PARAMS[fps] ?? 5;
 $noerror = $PARAMS[noerror] ?? 1; //will remove stream instead of showing alturl, will still show alturl if there is no stream available
 $alturl = "unavailable.png"; //alternative picture, will be shown if stream is not available
 
-if ($id == "") die("Invalid Camera ID");
+if ($ids == "") die("No Camera ID specified.");
 $ids = $ids."-";
 $idarray = explode("-", $ids);
 ?>
